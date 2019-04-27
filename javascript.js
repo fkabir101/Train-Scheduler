@@ -1,10 +1,10 @@
 var config = {
-  apiKey: "AIzaSyBv3bP5jX0v9sSdQtPtsvzMJKRLtuILWx8",
-  authDomain: "classwork-6401f.firebaseapp.com",
-  databaseURL: "https://classwork-6401f.firebaseio.com",
-  projectId: "classwork-6401f",
-  storageBucket: "classwork-6401f.appspot.com",
-  messagingSenderId: "964588687299"
+  apiKey: "AIzaSyAR6qLFq1KcqBXRaXh_jWoh-_ECercv6Yk",
+  authDomain: "trains-9623f.firebaseapp.com",
+  databaseURL: "https://trains-9623f.firebaseio.com",
+  projectId: "trains-9623f",
+  storageBucket: "trains-9623f.appspot.com",
+  messagingSenderId: "997716677577"
 };
 firebase.initializeApp(config);
 
