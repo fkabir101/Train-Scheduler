@@ -10,13 +10,13 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-$("#add-employee-btn").on("click", function (event) {
+$("#submit-btn").on("click", function (event) {
   event.preventDefault();
-
   var tName = $("#name-input").val().trim();
   var tDest = $("#dest-input").val().trim();
-  var tFirst = moment($("#start-input").val().trim(), "HH:mm").format("X");
-  var tFreq = $("#rate-input").val().trim();
+  var time = $("#arival-input").val().trim();
+  var tFirst = moment(time, "HH:mm").format("X");
+  var tFreq = $("#freq-input").val().trim();
 
   var newTrain = {
     tName: tName,
@@ -72,7 +72,7 @@ database.ref().on("child_added", function (childSnapshot) {
     $("<td>").text(dest),
     $("<td>").text(tFrequency),
     $("<td>").text(firstTimeConverted),
-    $("<td>").text(nextTrain),
+    $("<td>").text(moment(nextTrain).format("hh:mm")),
   );
 
   // Append the new row to the table
